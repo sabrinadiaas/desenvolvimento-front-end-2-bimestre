@@ -6,3 +6,7 @@
     --cor-branca: #ffffff;
     --cor-preta: #000000;
 }
+
+header {
+ background-color: var(--cor-secundaria);
+}
