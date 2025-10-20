@@ -7,6 +7,7 @@
 O presente repositório contém o projeto integrador feito por Sabrina Dias Nogueira e Sarah Ferreira Monteiro que cria um site vendável para um negócio real. A confeitaria Doces da Iza foi escolhida para o projeto, que criou três páginas para seu escopo inicial: início, cardápio e pedidos. O site busca atrair clientes em busca de doces para eventos como festas de aniversário, tendo um alto potencial de vendas e, por sua natureza simples, não há possibilidade de escassez de clientes.
 
 Um protótipo inicial foi feito no figma paras as duas primeiras páginas, com uma prototipagem inicial que buscava definir as cores e o estilo a ser seguido completo com anotações detalhadas sobre a escolha e um protótipo auxiliador que buscou criar uma simulação clicável do projeto. Ambos foram iniciados no dia 15 de outubro e finalizados no dia 18 de outubro, com o primeiro sendo feito por Sarah Ferreira Monteiro e o segundo por Sabrina Nogueira Dias. Abaixo se encontra o link de ambos.
+
 Protótipo inicial: https://www.figma.com/board/0DAGZgQW9ghlw0lX70CfcK/Projeto-Integrador?node-id=0-1&t=kyLpQWWr5GRFdu2F-1
 Protótipo clicável:https://www.figma.com/design/WRwNW5pEMk9dLY8dZsAzOQ/Sem-t%C3%ADtulo?node-id=0-1&t=HnhqiQ7KDVQpesDA-1
 
