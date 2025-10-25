@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Doces da Iza</title>
+    <title>Doces da Iza - Cardápio</title>
 </head>
 <body>
     <header>
@@ -18,48 +18,167 @@
         </nav>
     </header>
     <main>
-        <h2>Conheça nossos produtos!</h2>
-        <div class ="carrosel">
+        <div class="carrosel">
             <h3>DOCINHOS</h3>
-            <div class="slides">
-                <img src="img\docinhos1.jpg" alt="">
-                <img src="img\docinhos2.png" alt="">
-                <img src="img\docinhos3.png" alt="">
-                <img src="img\docinhos4.png" alt="">
-                <img src="img\docinhos5.png" alt="">
-                <img src="img\docinhos6.png" alt="">
+            <div class="carrossel-container">
+                <button class="carrosel-btn prev-btn">‹</button>
+                <div class="slides">
+                    <img src="img/docinhos1.png" alt="Docinhos 1">
+                    <img src="img/docinhos2.png" alt="Docinhos 2">
+                    <img src="img/docinhos3.png" alt="Docinhos 3">
+                    <img src="img/docinhos4.png" alt="Docinhos 4">
+                    <img src="img/docinhos5.png" alt="Docinhos 5">
+                    <img src="img/docinhos6.png" alt="Docinhos 6">
+                </div>
+                <button class="carrosel-btn next-btn">›</button>
+            </div>
+            <div class="carrossel-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+                <div class="indicator" data-slide="4"></div>
+                <div class="indicator" data-slide="5"></div>
             </div>
         </div>
-        <div class ="carrosel">
+        
+        <div class="carrosel">
             <h3>BOLOS CONFEITADOS</h3>
-            <div class="slides">
-                <img src="img\bolo1.png" alt="">
-                <img src="img\bolo2.png" alt="">
-                <img src="img\bolo3.png" alt="">
-                <img src="img\bolo4.png" alt="">
-                <img src="img\bolo5.png" alt="">
-                <img src="img\bolo6.png" alt="">
+            <div class="carrossel-container">
+                <button class="carrosel-btn prev-btn">‹</button>
+                <div class="slides">
+                    <img src="img/bolo1.png" alt="Bolo 1">
+                    <img src="img/bolo2.png" alt="Bolo 2">
+                    <img src="img/bolo3.png" alt="Bolo 3">
+                    <img src="img/bolo4.png" alt="Bolo 4">
+                    <img src="img/bolo5.png" alt="Bolo 5">
+                    <img src="img/bolo6.png" alt="Bolo 6">
+                </div>
+                <button class="carrosel-btn next-btn">›</button>
+            </div>
+            <div class="carrossel-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+                <div class="indicator" data-slide="4"></div>
+                <div class="indicator" data-slide="5"></div>
             </div>
         </div>
-        <div class ="carrosel">
+        
+        <div class="carrosel">
             <h3>DOCES DE FESTA</h3>
-            <div class="slides">
-                <img src="img\bombom_pistache.png" alt="">
-                <img src="img\bombom_morango.png" alt="">
-                <img src="img\bolo_gelado.png" alt="">
-                <img src="img\brownie_casado.png" alt="">
-                <img src="img\pao_de_mel.png" alt="">
-                <img src="img\degustacao.png" alt="">
+            <div class="carrossel-container">
+                <button class="carrosel-btn prev-btn">‹</button>
+                <div class="slides">
+                    <img src="img/bombom_pistache.png" alt="Bombom pistache">
+                    <img src="img/bombom_morango.png" alt="Bombom morango">
+                    <img src="img/bolo_gelado.png" alt="Bolo gelado">
+                    <img src="img/brownie_casado.png" alt="Brownie casado">
+                    <img src="img/pao_de_mel.png" alt="Pão de mel">
+                    <img src="img/degustacao.png" alt="Degustação">
+                </div>
+                <button class="carrosel-btn next-btn">›</button>
+            </div>
+            <div class="carrossel-indicators">
+                <div class="indicator active" data-slide="0"></div>
+                <div class="indicator" data-slide="1"></div>
+                <div class="indicator" data-slide="2"></div>
+                <div class="indicator" data-slide="3"></div>
+                <div class="indicator" data-slide="4"></div>
+                <div class="indicator" data-slide="5"></div>
             </div>
         </div>
     </main>
     <footer>
         <p>Entre em contato conosco</p>
         <div class="icones">
-        <a href="https://www.instagram.com/docesdaiza_/"><img src="img\logo-instagram.png" alt="Logo do Instagram."></a>
-        <a href="https://wa.me.61981557964"><img src="img\logo-whatsapp.png" alt="Logo do WhatsApp."></a>
+            <a href="https://www.instagram.com/docesdaiza_/"><img src="img/logo-instagram.png" alt="Logo do Instagram."></a>
+            <a href="https://wa.me/61981557964"><img src="img/logo-whatsapp.png" alt="Logo do WhatsApp."></a>
         </div>
         <p>© 2025 Doces da Iza. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.carrosel').forEach(carrosel => {
+                const slidesContainer = carrosel.querySelector('.slides');
+                const prevBtn = carrosel.querySelector('.prev-btn');
+                const nextBtn = carrosel.querySelector('.next-btn');
+                const indicators = carrosel.querySelectorAll('.indicator');
+                const slides = carrosel.querySelectorAll('.slides img');
+                
+                let currentIndex = 0;
+                
+                function getSlidesToShow() {
+                    if (window.innerWidth >= 1024) return 3;
+                    if (window.innerWidth >= 768) return 2;
+                    return 1;
+                }
+                
+                function updateCarrossel() {
+                    const slidesToShow = getSlidesToShow();
+                    const slideWidth = slides[0].offsetWidth + 16;
+                    const maxIndex = slides.length - slidesToShow;
+                    
+                    currentIndex = Math.min(currentIndex, maxIndex);
+                    
+                    slidesContainer.scrollTo({
+                        left: currentIndex * slideWidth,
+                        behavior: 'smooth'
+                    });
+                    
+                    indicators.forEach((indicator, index) => {
+                        indicator.classList.toggle('active', index === currentIndex);
+                    });
+                }
+                
+                function nextSlide() {
+                    const slidesToShow = getSlidesToShow();
+                    const maxIndex = slides.length - slidesToShow;
+                    
+                    if (currentIndex < maxIndex) {
+                        currentIndex++;
+                    } else {
+                        currentIndex = 0;
+                    }
+                    updateCarrossel();
+                }
+                
+                function prevSlide() {
+                    const slidesToShow = getSlidesToShow();
+                    const maxIndex = slides.length - slidesToShow;
+                    
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                    } else {
+                        currentIndex = maxIndex;
+                    }
+                    updateCarrossel();
+                }
+                
+                function goToSlide(index) {
+                    currentIndex = index;
+                    updateCarrossel();
+                }
+                
+                nextBtn.addEventListener('click', nextSlide);
+                prevBtn.addEventListener('click', prevSlide);
+                
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => goToSlide(index));
+                });
+                
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') prevSlide();
+                    if (e.key === 'ArrowRight') nextSlide();
+                });
+                
+                window.addEventListener('resize', updateCarrossel);
+                
+                updateCarrossel();
+            });
+        });
+    </script>
 </body>
 </html>
