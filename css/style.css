@@ -326,7 +326,7 @@ form button:hover {
   background-color: var(--cor-primaria);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     header {
         padding: 2rem;
     }
