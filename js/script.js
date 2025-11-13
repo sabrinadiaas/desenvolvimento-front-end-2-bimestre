@@ -93,3 +93,19 @@ document.addEventListener('DOMContentLoaded', function() {
         new Carousel(carrosel);
     });
 });
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener('scroll', function() {
+  const scrollTopBtn = document.querySelector('.scroll-top');
+  if (window.pageYOffset > 300) {
+    scrollTopBtn.classList.add('show');
+  } else {
+    scrollTopBtn.classList.remove('show');
+  }
+});

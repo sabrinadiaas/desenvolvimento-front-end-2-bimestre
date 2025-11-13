@@ -389,3 +389,32 @@ form textarea:focus {
     border-color: var(--cor-terciaria);
     transform: scale(1.02);
 }
+
+.scroll-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.8rem;
+    border: 0.05rem;
+    border-radius: 50%;
+    background-color: var(--cor-rosa);
+    color: var(--cor-branca);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1.5rem;
+}
+
+.scroll-top.show {
+    opacity: 1;
+}
+
+.scroll-top:hover {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.scroll-top:focus {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
