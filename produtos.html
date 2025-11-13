@@ -4,17 +4,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes"/>
     <title>Doces da Iza - Cardápio</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <div id="header-container"></div>
-    <main>
+    <main id="main-content" tabindex="-1">
         <div class="carrosel" data-carousel="docinhos">
-            <h2>DOCINHOS</h2>
+            <h3>DOCINHOS</h3>
             <div class="carrossel-container">
                 <button class="carrosel-btn prev-btn">‹</button>
-                <div class="slides">
+                <div class="slides" tabindex="0" role="region">
                     <img src="img/docinhos1.png" alt="Docinhos 1">
                     <img src="img/docinhos2.png" alt="Docinhos 2">
                     <img src="img/docinhos3.png" alt="Docinhos 3">
@@ -33,10 +34,10 @@
         </div>
         
         <div class="carrosel" data-carousel="bolos">
-            <h2>BOLOS CONFEITADOS</h2>
+            <h3>BOLOS CONFEITADOS</h3>
             <div class="carrossel-container">
                 <button class="carrosel-btn prev-btn">‹</button>
-                <div class="slides">
+                <div class="slides" tabindex="0" role="region">
                     <img src="img/bolo1.png" alt="Bolo 1">
                     <img src="img/bolo2.png" alt="Bolo 2">
                     <img src="img/bolo3.png" alt="Bolo 3">
@@ -55,10 +56,10 @@
         </div>
         
         <div class="carrosel" data-carousel="doces-festa">
-            <h2>DOCES DE FESTA</h2>
+            <h3>DOCES DE FESTA</h3>
             <div class="carrossel-container">
                 <button class="carrosel-btn prev-btn">‹</button>
-                <div class="slides">
+                <div class="slides" tabindex="0" role="region">
                     <img src="img/bombom_pistache.png" alt="Bombom pistache">
                     <img src="img/bombom_morango.png" alt="Bombom morango">
                     <img src="img/bolo_gelado.png" alt="Bolo gelado">

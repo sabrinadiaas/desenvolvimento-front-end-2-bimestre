@@ -4,20 +4,21 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes"/>
     <title>Doces da Iza - Pedidos</title>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <div id="header-container"></div>
-    <main>
-        <h1 class="title">Faça seu pedido:</h1>
+    <main id="main-content" tabindex="-1">
+        <h1>Faça seu pedido:</h1>
        <form>
             <label for="name">Nome:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+            <input type="text" id="name" name="name" required><br><br>
             <label for="phone">Telefone:</label><br>
-            <input type="phone" id="phone" name="phone"><br><br>
+            <input type="phone" id="phone" name="phone" required><br><br>
             <label for="mensagem">Pedido:</label><br>
-            <textarea id="pedido" name="pedido" rows="7" placeholder="Descreva seu pedido aqui..."></textarea><br>
+            <textarea id="pedido" name="pedido" rows="7" required placeholder="Descreva seu pedido aqui..."></textarea><br>
             <button type="submit">Enviar</button>
         </form>
         </form>
