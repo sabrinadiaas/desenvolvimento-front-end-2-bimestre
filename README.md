@@ -19,3 +19,28 @@ As cores do site foram definidas com base nas cores usadas para a logo original 
 
 A página pedidos permaneceu incompleta, sendo reservada para as próximas etapas a fim de ser desenvolvida com o uso da integração da linguagem JavaScript e, por meio da aprimoração dos conhecimentos, ser diagramada de forma fiel e concisa no figma. A princípio, planejamos aplicar um sistema similar ao de sites de compra online, que permitem que os usuários selecionem seus itens no cardápio, enviem esse para o carrinho e selecionem o pagamento. Outra possibilidade visitada é a criação de um formulário ou outro método que armazene os detalhes do pedido e os envie para a confeitaria. 
 
+## Parte 2:
+
+O que já está funcionando bem?
+Os media queries focados em desktop e tablet se adaptam adequadamente e as medidas de acessibilidade foram implementadas corretamente. O menu de navegação está funcionando, assim como o carrossel interativo de itens na página cardápio e formulário em pedidos.
+
+Quais elementos HTML se repetem em várias páginas?
+O head, o header e o footer se repetem no código de todas as páginas.
+
+Onde o layout "quebra" ou fica estranho?
+O layout está tendo problemas para se adaptar aos dispositivos mobile, reconhecendo eles como tablets e estendendo a página para além do footer.
+
+Quais melhorias fariam diferença real para o usuário do pequeno negócio?
+Correção da responsividade das páginas e verificação profunda de erros de acessibilidade e funcionalidades.
+
+Foram modularizados os seguintes elementos: header, footer, carrossel e responsividade do css. A modularização foi escolhida para que seja possível a reutilização de código e para manter consistência visual em todas as páginas. Isso também facilita na manutenção do código, já que caso algum ajuste seja necessário, apenas um arquivo deve ser alterado e a mudança será refletida em todo o projeto.
+
+Para tornar o site mais acessível e inclusivo, implementamos as seguintes melhorias:
+Alto contraste entre texto e fundo, facilitando a leitura para usuários com baixa visão; Tipografia legível, com fontes de boa legibilidade e tamanho adequado; Navegação por teclado com indicador de foco visível, a implementação do botão “pular para o conteúdo principal” e o uso de tags HTML semânticas, para que o código esteja bem claro para leitores de tela.
+
+Para garantir responsividade do site, o layout foi adaptado usando Media Queries e unidades relativas (como % e rem), assim, garantimos que o site se comporte de maneira adequada em diferentes tipos de dispositivos. O uso de Flexbox e Grid permitiu que os elementos se organizem de maneira fluida, sem quebra de layout em telas com tamanhos diferentes.
+
+Para conectar nosso site ao mundo real e digital, fizemos algumas integrações externas. Google Maps, para que os clientes identifiquem com facilidade a localização da loja, incentivando visitas presenciais e Redes Sociais (Instagram e WhatsApp), com links diretos para as redes, aumentando o contato entre o cliente e a empresa, ampliando a divulgação e o atendimento rápido.
+
+Em conclusão, o site criado possui um escopo pequeno e simples que pode ser atingido perfeitamente durante as duas etapas — garantindo a satisfação do cliente. 
+
