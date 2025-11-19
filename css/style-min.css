@@ -1,0 +1,400 @@
+.logo,.navegacao{
+    display:flex;
+    gap:1rem
+}
+
+.navegacao a,.skip-link{
+    text-decoration:none;
+    padding:.5rem 1rem
+}
+
+header,main{
+    padding:1rem
+}
+
+.logo,main p{
+    margin-bottom:1.5rem
+}
+
+main h1,main h2,main p{
+    color:var(--cor-preta);
+    text-align:left
+}
+
+footer,header{
+    background-color:var(--cor-secundaria)
+}
+
+.skip-link:focus,footer{
+    color:var(--cor-branca)
+}
+
+*,.cardapio{
+    box-sizing:border-box
+}
+
+.navegacao a,footer,footer p,form,main h3{
+    text-align:center
+}
+
+.navegacao a,form button{
+    transition:background-color .3s
+}
+
+.carrosel-btn:focus,.scroll-top.show{
+    opacity:1
+}
+
+:root{
+    --cor-primaria:#F5F0DD;
+    --cor-secundaria:#F4DEB6;
+    --cor-terciaria:#552D12;
+    --cor-rosa:#E9988F;
+    --cor-branca:#ffffff;
+    --cor-preta:#000000;
+}
+
+@font-face{
+    font-display:swap;
+    font-family:Inter;
+    font-style:normal;
+    font-weight:100 900;
+    src:url('../fonts/inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    }
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Inter,sans-serif;
+}
+        
+:focus{
+    outline:0;
+    }
+        
+.skip-link{
+    position:absolute;
+    top:-62.5rem;
+    left:0;
+    z-index:1000;
+    background:var(--cor-secundaria);
+    color:var(--cor-terciaria);border-radius:0 0 .5rem;
+    transition:top .3s;
+    font-weight:600;
+    font-size:.9rem
+}
+
+.skip-link:focus{
+    top:0;
+    left:0;
+    background-color:var(--cor-terciaria)
+}
+
+.carrosel-btn:focus,.carrosel-btn:hover,.navegacao a,body,footer p,form button,header,main h3{
+    color:var(--cor-terciaria)
+}
+
+body{
+    font-family:Inter;
+    background-color:var(--cor-primaria);
+    line-height:1.6
+}
+
+header{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center
+}
+
+.cardapio,main{
+    background-color:var(--cor-branca)
+}
+
+.destaques,.logo{
+    justify-content:center
+}
+
+.logo{
+    align-items:center;
+    max-width:453px;
+    height:107px
+}
+
+.logo img{
+    height:100%;
+    width:auto;
+    object-fit:contain;
+}
+
+.destaques img,.icones img,.slides img{
+    width:100%;
+    object-fit:cover;
+}
+
+.navegacao{
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    flex-wrap:wrap
+}
+
+.navegacao a{
+    font-weight:500;
+    border-radius:4px;
+    white-space:nowrap
+}
+
+.navegacao a:hover,form button:focus,form button:hover{
+    background-color:var(--cor-rosa);
+    color:var(--cor-branca)
+}
+
+.navegacao a:focus{
+    top:0;
+    outline:.2rem solid var(--cor-rosa);
+    outline-offset:0
+}
+
+main{
+    max-width:800px;
+    margin:1rem auto;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,.05)
+}
+
+main h1,main h2{
+    font-weight:500;
+    margin-bottom:.5rem;
+    padding-bottom:.5rem
+}
+
+main h3{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-weight:600;
+    font-size:1.4rem
+}
+
+.destaques{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+    align-items:center;
+    margin-bottom:20px
+}
+
+.destaques img{
+    max-width:100%;
+    height:auto;
+    border-radius:8px
+}
+
+.localizacao{
+    width:100%;
+    max-width:800px;
+    aspect-ratio:16/9
+}
+
+.localizacao iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:8px
+}
+
+footer{
+    padding:1.5rem;
+    margin-top:1.5rem
+}
+
+footer p{
+    margin-bottom:1rem
+}
+
+.icones{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px
+}
+
+.icones img{
+    max-width:3rem;
+    height:auto
+}
+
+.cardapio{
+    width:100%;
+    height:500px;
+    border:.3rem solid var(--cor-rosa);
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1)
+}
+
+.cardapio iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    display:block
+}
+
+.carrosel{
+    margin:2rem 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+
+.carrosel:first-child{
+    margin-top:.5rem
+}
+
+.carrossel-container{
+    position:relative;
+    display:flex;
+    align-items:center;
+    width:100%;
+    max-width:100%;
+    padding:0 3rem
+}
+
+.slides{
+    display:flex;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    gap:1rem;
+    width:100%;
+    padding:.5rem 0;
+    scrollbar-width:none;
+    -ms-overflow-style:none
+}
+
+.slides::-webkit-scrollbar{
+    display:none
+}
+
+.slides img{
+    flex:0 0 auto;
+    height:100%;
+    border-radius:8px;
+    transition:transform .3s,box-shadow .3s;
+    box-shadow:0 2px 6px rgba(0,0,0,.1)
+}
+
+.slides img:hover{
+    transform:scale(1.03);
+    box-shadow:0 4px 10px rgba(0,0,0,.15)
+}
+
+.carrosel-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:0 0;
+    border:none;
+    color:var(--cor-rosa);
+    cursor:pointer;
+    font-size:2.5rem;
+    font-weight:300;
+    z-index:20;
+    opacity:.8;
+    transition:.3s;
+    user-select:none;
+    width:auto;
+    height:auto
+}
+
+.indicator,form button{
+    background-color:var(--cor-secundaria);
+    cursor:pointer
+}
+
+.carrosel-btn:hover{
+    opacity:1;
+    transform:translateY(-50%) scale(1.2)
+}
+
+.prev-btn{
+    left:.5rem
+}
+
+.next-btn{
+    right:.5rem
+}
+
+.carrossel-indicators{
+    display:flex;
+    gap:.6rem;
+    margin-top:1rem
+}
+
+.indicator{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    transition:.3s
+}
+
+.indicator.active,.scroll-top{
+    background-color:var(--cor-rosa)
+}
+
+.indicator.active{
+    transform:scale(1.3)
+}
+
+form{
+    margin-top:1rem
+}
+
+form label{
+    display:block;
+    font-weight:700
+}
+    
+form input[type=phone],form input[type=text],form textarea{
+    width:35%;
+    padding:10px;
+    margin-bottom:.5rem;
+    border:2px solid var(--cor-secundaria);
+    border-radius:7px;
+    font-family:inherit;
+    font-size:1rem
+}
+
+form button{
+    font-weight:600;
+    padding:.5rem;
+    border:none;
+    border-radius:5px;
+    font-size:1rem
+}
+
+form input:focus,form textarea:focus{
+    border-color:var(--cor-terciaria);
+    transform:scale(1.02)
+}
+
+.scroll-top{
+    position:fixed;
+    bottom:1rem;
+    right:1rem;
+    padding:.8rem;
+    border:.05rem;
+    border-radius:50%;
+    color:var(--cor-branca);
+    cursor:pointer;
+    opacity:0;
+    transition:
+    opacity .3s;
+    font-size:1.5rem
+}
+
+.scroll-top:focus,.scroll-top:hover{
+    background-color:var(--cor-terciaria);
+    color:var(--cor-secundaria)
+}
